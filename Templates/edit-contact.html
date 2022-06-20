@@ -1,0 +1,27 @@
+{% extendes 'layout.html'%}
+{% bloc body%}
+<div class="col-md-4 offeset -md-4">
+    <div class="card card-body">
+        <form action="/update/{{contact.0}}" method="post">
+            <div class="form-gruop">
+                <input  type="text" name="fullname" placeholder="fullname" value="{{ contact.1}}" class="form-control">
+            </div>
+            
+            <div class="form-gruop">
+                <input  type="text" name="fullname" placeholder="phone" value="{{contact.2}}" class="form-contriol">
+            </div>
+
+            <div class="form-gruop">
+                <input  type="text" name="fullname" placeholder="Email" value="{{contact.3}}" class="form-control">
+            </div>
+
+            <div class="form-gruop">
+                 <button type="submit" class="btn btn-success btn-block">
+                Save
+            </button>
+            </div>
+           
+        </form>
+    </div>
+</div>
+{%endblock%}
